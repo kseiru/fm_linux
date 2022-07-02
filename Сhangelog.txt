@@ -1,0 +1,422 @@
+Version 0.4.1.1:
+  - Increased max distance where player can hear the checkpoint sirens
+  - Fixed bug with broken item dropping (also there may be errors in console where player drops a slot) (server-only bug)
+  - Fixed bug with cardreader section of the warhead and evac. shelter controller (server-only bug)
+  - Fixed bug when elevator SFX didn't disable if player was teleported out of elevator
+  - Fixed bug when player walking animation was playing even if player wasn't walking
+  - Fixed bug when held item was visible by SCP-939 while target wasn't moving
+  - Fixed bug when grenade explosion VFX was paused while not visible
+  - Fixed bug when human still was invisible after SCP-939 death
+  - Fixed bug when player didn't die due to warhead explosion
+  - Fixed bug with grenade colision sound (server-only bug)
+  - Fixed high CPU load on the server build
+  - Fixed bugs with item physics
+
+Version 0.4.1:
+  - Added evacuation shelter
+  - Added explosion VFX
+  - Game loading organized
+  - Network ompimization (x30 speedup or more)
+  - Game icon changed
+  - Fog density decreased
+  - Main menu UI changed
+  - Game brightness reduced
+  - Added player landing sounds
+  - Now items doesn't collides with dead bodies
+  - Alpha warhead controller UI was changed
+  - Admin panel improved (added possibility to teleport to player/room)
+  - Added new menu panels - "Game Files" and "About"
+  - Human and SCP-939 speed increased
+  - Admin zone doors animation changed
+  - Added new setting - "Framerate limit"
+  - Quality preset names was localized
+  - Added sound FX, it enables when player is in elevator
+  - Grenades physics changed (more friction, less bounciness)
+  - Now 939 doesn't see non-moving players and sees them if gets too close
+  - Now humans can win if 30% or more humans (of human count at round start) escaped with evacuation shelter
+  - Fixed bug with broken power system
+
+  Also the code was rewrited and improved, so there is some additional changes:
+    - Localization system changed (added check for non-existing keys)
+    - Round system changed (now only humans can be spawned, if round starts with one player)
+    - Inventory system changed (now empty spaces between items will be filled)
+
+Version 0.4:
+  - New room in entrance zone "ez_cabinets"
+  - New item: Guard keycard
+  - New playable SCP: SCP-939
+  - Human now can win
+  - Admin panel updated (Added "target player", "health", "round", "warhead", "power", "kick" settings)
+  - Screenshots, Config (In Windows version) location moved to "AppData/Roaming" folder
+  - All admin zone room corners was smoothed
+  - Added new quality preset: "Very Low"
+  - Now texture quality will be lower on "Low" and "Very Low"
+  - New floor texture in Admin and Entrance zone
+  - New elevator floor texture
+  - Gameplay settings UI changed
+  - Main menu UI changed
+  - "Medibay" room in Entrance zone was changed
+  - Grenade collision sound volume was decreased a little bit
+  - Player list UI changed (there will be "ADM" text if player entered admin panel)
+  - Now SCP can disable/enable power system
+  - Facility manager keycard added to Entrance zone spawn list
+  - Added new spawnpoint to Entrance Zone
+  - Now inventory won't be closed when player dropping selected item
+  - Now if player connects to a server with diffrent version he will be notified about disconnection reason
+  - Fixed bug when user was able to type letters to port field
+  - Fixed bug with flashlight that emitted light after player death
+  - Fixed bug when player speed was slowed while falling on items
+  - Fixed bug with lights after reactivating power system
+  - Fixed bug with dead player body collisions
+  - Fixed lights in admin zone
+
+Version 0.3.5:
+  - Gun room added to Admin zone
+  - Added grenade throwing animation 
+  - Ring removed from thrown grenade
+  - Grenade now can ignite other grenades
+  - Grenade radius distances was changed
+  - Warhead timer can't be resetted until 30 second now
+  - Some new items added to Admin zone spawn list
+  - Grenade explosion time decreased to 3 seconds (from 5 sec.)
+  - SCP-173 spotting system improved
+  - SCP-173 spotting distance increased to 30 meters (from 16 m.)
+  - Grenade throwing time increased to 1.5 seconds (from 1 sec.)
+  - Fixed bug when player reconnected to the game when wanted to disconnect
+  - Fixed wrong initial value in resolution dropdown
+  - Fixed bug with broken spawn by admin panel
+  - Item using progress UI was changed
+  - Map was expanded
+
+Version 0.3.4:
+  - Grenade added
+  - Admin panel added
+  - Elevator call cooldown added
+  - Localization system changed
+  - SCP-420-J now kills slower
+  - SCP-420-J now can be cured by Healkit
+  - Item spawnpoints added to "EZ medibay"
+  - "Evacuation shelter" room was changed a little
+  - Fixed bug when medibay room door sound played without sound effects
+  - Fixed bug when cursor disappeared in start round panel
+  - Fixed bug when items didn't teleport in elevator
+  - Fixed item animations in player hand
+  - Fixed menu translations
+  - Some textures was downsized
+  - New config parameter: Max players in server 
+
+Version 0.3.3:
+  - Healkit added
+  - Cardreader sounds added
+  - Loading window UI changed
+  - Server configuration added
+  - Discord webhook event system added
+  - Popup message style changed
+  - New room added to Entrance Zone
+  - SCP-173 moving sounds are added
+  - Pause Menu UI was changed
+  - Player list added to Pause Menu
+  - Human speed acceleration boosted to 40% (from 20%)
+  - El. center room was changed (now loot spawns there)
+  - Game servers are now available (as soon as added, they appear)
+  - Cardreader is showing "Access denied message" even without card
+  - Now you can drop items in inventory by right mouse button
+  - Sound was improved (added reverb and some other effects)
+  - Fixed bug when player count doesn't displays in pause menu
+  - Fixed round end conditions double checking
+  - Fixed a lot of bugs in server-only mode
+  - Game is now more stable
+
+Version 0.3.2.1:
+  - Added possibility to fly around in Spectator mode
+  - Fixed bug with broken player walk animation (on PC with high FPS)
+  - Fixed bug when player sometimes can't jump on PC with high FPS
+  - Fixed bug when game closed if Discord wasn't runned
+  - Fixed bug with broken spawn system
+  - Fixed bug with broken server auto-start and client reconnect
+  - Fixed bug when player collides with other players
+  - Fixed incorrect time in Discord Rich Presence
+  - Code omptimized
+
+Version 0.3.2:
+  - Admin zone rooms model was changed
+  - Human player collider was corrected
+  - Player blinking time increased
+  - SCP-173 attack distance reduced
+  - SCP-173 detection distance increased
+  - SCP-173 speed increased
+  - SCP-173 now can't jump when spotted
+  - Fixed bug when player can move faster holding W + (A or D)
+  - Fixed language double loading and parsing 
+  - Fixed when tooltip message didn't fade out properly 
+
+Version 0.3.1.1:
+  - SCP-173 now doesn't move when spotted
+  - Fixed bug when IP address/Port fields text was invisible on high-resolution screens
+  - Fixed bug when SCP-173 can't kill anyone
+  - Fixed bug when SCP-420-J visual effect applies always to server player
+  - Fixed bug when SCP-173 contain announcment didn't play when 173 disconnected
+  - Fixed bug when round didn't end when all humans disconnected (not died)
+
+Version 0.3.1:
+  - Main menu redesign (new UI, animation transitions, etc)
+  - UI changed in "Wait for round start" screen
+  - Now you can start server/connect from main menu
+  - Added start items for human classes
+  - Added "SCP 173 contain" announcment
+  - Round now starts automatically if there're 2 and more players in the server
+  - Now you can take screenshot by using F5 key (Screenshots will be saved to <game folder>\Screenshots)
+  - Added showing Discord Rich Presence in your profile when you play
+  - In menu you will see your Discord Username if Facility Manager successfuly connected to Discord
+  - Item system was improved
+  - Alpha wahead monitor UI changed a little bit
+  - Added item using progress bar
+  - SCP 420-J now kills faster (also 420-J kills after using the second cigarette)
+  - First-person animations are removed. Now you can see items in hands of player model
+  - Localization system changed. Now game use Localization files (at path <game folder>\Facility Manager_Data\StreamingAssets\Languages)
+  - Flashlight battery life time is now 2 minutes
+  - LCZ Decontamination is deleted
+  - SCP-173 now has only one spawnpoint (located in Entrance zone)
+  - One new spawnpoint for humans added to Entrance Zone
+  - Models omptimized
+  - Dead body and some dropped items added to Evacuation Shelter room
+  - "Cancel connection" button was removed
+  - Reduced warhead detonation delay
+  - Fixed bug when player animations breaks while player was teleporting
+  - Fixed bug when inventory didn't hide while player is dying
+  - Fixed bug when player can see through his model while dying (and now while looking at his body)
+  - Fixed a lot of bugs with flashlight and other items
+  - And other bug fixes and small changes
+
+Version 0.3:
+  - Multiplayer was implemented
+  - Warhead monitor UI was Changed
+  - Now player can be spawned as Guard, Scientist, Class D or SCP-173
+  - SCP-173 now can kill human
+  - Player now has his own model
+  - Inventory UI and logic changed (now inventory can be opened by Tab key)
+  - Elevator teleporting now will be more smoothly
+  - Death changed a little bit
+  - Added spectator mode
+  - Added basic round system
+  - Added client reconnect and server autorestart
+  - Now keycard inventory icon has diffrent images for Scientist, Facility Manager and O5 keycard
+  - Item names now has translated names
+  - Material count reduced (rendering should be faster)
+  - Audio level now saves
+  - Added footsteps
+
+Version 0.2.3:
+  - Alpha warhead explosion was changed. Now it looks more realistic
+  - Admin Zone lights now will be disabled when Facility Power System is turned off
+  - Light count reduced on the map. Now rendering will be faster and game looks darker
+  - Fixed bug with walking animation
+  - Fixed bug with item picking up animation
+  - Player physic now calculates even in Pause Menu
+  - Player/Item spawner and Room generator was omptimized
+  - Facility Power System now disables/enables faster
+  - Some changes with FPS counter
+  - Some model was omptimized
+
+Version 0.2.2:
+  - Added "Evacuation Shelter" room to Entrance Zone
+  - Added "Electrical center" room to Entrance Zone
+  - Facility power system now can be disabled in Electrical center room
+  - "Entrance To Admin zone" checkpoint room has been changed. Now it's not so big
+  - Admin Zone elevator room has been changed. Now it's not so big, and now there is a shelf in the room.
+  - 420-J model and texture has been changed.
+  - 420-J room now has 4 SCP-420-J
+  - 420-J now kills faster
+  - Animation system was changed (and all animations was reworked)
+  - Player now has walking animation (Player camera is shaking when player walks)
+  - Items now won't fall through other objects (table or floor). Item physics is now stable
+  - And other fixes and changes that I forgot
+
+Version 0.2.1:
+  - Added three way intersection and circular corridor rooms to Entrance Zone
+  - Added SCP-420-J. It can be used by pressing "U" key. It'll increase your speed and jump height, and also gives an additional HP. But if you use it more than 2 times you will die.
+  - Added SCP-420-J room
+  - Added buff system (and the first buff: SCP-420-J Effect)
+  - Added item spawner. Now items will be spawned randomly in Admin Zone
+  - Now all doors have their sounds
+  - Now player will spawn randomly
+  - Some model materials was changed
+  - Wall model changed in elevator room (Admin Zone)
+  - Card swiping sound is now loud
+  - Jump height increased
+  - Player radius collider has been reduced. Now the player isn't so fat
+  - Explosion area has been expanded (again)
+  - Fixed bug with elevator sound (it played when player spawned on the map)
+  - Fixed bug with player speed acceleration. Shift worked incorrectly, now player can run faster with shift
+  - Fixed bug when some lights in Admin Zone and all lights in Entrance zone didn't change their color to red when the detonation is started
+
+Version 0.2:
+  - Added 4 new rooms to Admin Zone + one room was changed
+  - Added 2 new rooms to Entrance Zone
+  - Added room generator. Now it generates rooms in Admin Zone (and Entrance Zone) with one template
+  - Added elevator system (and the elevators)
+  - Added checkpoint system (and the checkpoint)
+  - Added sounds for checkpoint and elevator doors
+  - Added a new keycard (O5 Keycard)
+  - Cardreader (and Interactable Button) scripts was omptimized
+  - Fixed bug when keycard swiping sound wasn't playing when player unlocks the warhead control
+  - Fixed bug with light element in the cardreader (light animation was playing incorrectly)
+  - Fixed bug when player had white screen from explosion while he wasn't in explosion area
+  - Explosion area has been expanded
+  - Main menu scene changed (again)
+
+------------------------------------------------------------
+   INCORRECT VERSION NUMBERS BELOW
+------------------------------------------------------------
+
+Version 1.1.4.1:
+  - Added new room models
+  - Keycard textures has been remaked
+  - New warhead activation/deactivation procedure
+  - New door animations
+  - Button and keycard reader now have the same model (button default glow is orange, Keycard reader is blue)
+  - Main menu scene changed
+  - Player death fixed (there was 2 errors that printed in logs)
+  - Fixed some physics issues
+  - Detonation (white screen) now appears more smoothly
+  - And other fixes and small changes
+
+Version 1.1.4:
+  - Unity has been updated. Now the game runs with Unity 2019.4
+  - Project is now using Universal Render Pipeline instead of legacy 3D project template
+  - Post processing effects has been changed. Now it looks better
+  - Now post processing effects can't be disabled
+  - Anti-aliasing now can't be disabled/enabled. Anti-aliasing will only work if "High Quality" is selected in the settings
+  - Player movement script was remaked. Player now can't slide out of the bounds of the room 
+  - "Alpha Warhead" is now the main entry point of the game. "LCZ Decontamination" is deprecated. 
+  - Flashlight model was remaked
+  - Flashlight animations was changed
+  - Main Menu changed
+  - Fog enabled
+
+Version 1.1.3:
+  - Added item animations
+  - Added battery
+  - New setting: Language
+  - Added Russian language
+  - Now flashlight battery can run out
+  - Flashlight intensity decreased a little bit
+  - UI changed in "Alpha Warhead"
+  - Main menu changed
+  - Added door button
+  - Added a new room
+
+Version 1.1.2.2:
+  Added:
+    - Health system
+  Changed:
+    - Physics calculation frequency increased by 2 times, now it's 100 calculations in second instead of 50
+    - Player death
+    - Warhead detonation
+    - Crosshair
+    - Item icons
+  Fixed:
+    - Antialiasing now can be enabled/disabled (there was bug with it)
+    - Power Control Generator now can disbale/enable lighting in the room
+	- Interaction distance reduced
+	- Fixed a bug that caused the flashlight emit light (a little) when it's turned off
+	- Scripts was omptimized a bit
+	- Added collider to the Warhead countdown screen (I forgot to add it)
+    - And other fixes
+
+Version 1.1.2.1:
+  Added:
+    - Flash effect when Power Control Lever is switched to "Enabled State"
+    - Added normal map to Card reader screen and to the Power Control Generators.
+    - Card swiping sound
+  Changed:
+    - UI Design changed in Main Menu, Alpha Warhead, LCZ Decontamination
+    - All models was reworked. Warhead room, door (a little bit), Warhead Control panel, lamp ...
+    - Vertex amount was reduced
+    - Loading screen now has loading bar
+    - FPS update frequency reduced
+    - Removed unused textures, sounds and scripts
+    - Removed door opening by using keycard on a door (now you can interact only with a cardreader to open/close door)
+    - Now you can use Left Mouse Button to interact with doors/power control generators, picking items ("E" key is still working)
+    - Some changes with colors and other things in LCZ Decontamination
+  Fixed:
+    - Fixed inventory initialization bug
+    - All game scripts was rewritten and optimized
+    - And other bug fixes that I forgot
+
+Version 1.1.2:
+  Added:
+    - New alpha warhead activation/deactivation sequence.
+    - Card readers 
+    - Flashlight
+    - Inventory
+    - Death
+    - Cutscene before Alpha Warhead Detonation
+    - New settings: FPS Debug, Antialiasing, Resolution
+    - Power control in Alpha Warhead Room
+  Changed:
+    - Alpha wahead detonation
+    - Game and main menu
+    - Settings
+    - Post-processing now work in LCZ Decontamination
+    - Small changes with player physics
+    - Door in Alpha Warhead
+    - Quality presets reduced to 3 (Low, Medium, High)
+    - Alpha Warhead Control Panel has been changed. Now you need to unlock the button, an then click on it.
+    - Now you can exit from pause menu, changelog, settings by using Escape key
+    - Alpha Warhead pause menu has been changed.
+    - Resolution/Quality/Input selection window has been disabled.
+  Fixed:
+    - A lot of ompimization
+
+Version 1.1.1:
+  Added:
+    - Printing "DETONATION INEVITABLE" text on the Alpha Warhead Control Panel script when it's left only 10 seconds until the warhead detonates
+  Changed:
+    - UI in Alpha Warhead
+    - Few changes with lighting in Alpha Warhead
+  Fixed:
+    - Optimization with Alpha Warhead Control Panel Screen. It works faster now.
+    - Deleted all old unnecessary files from build
+
+Version 1.1.0:
+  Added: 
+    - Post Processing effects
+    - New setting (Enable/Disable Post-Processing)
+  Changed:
+    - New Main Menu (Layout, Background, Button Animations)
+    - The Alpha Warhead Room (Now has bump and some decorations)
+    - Lighting (Alpha Warhead)
+    - Few changes with Alpha Warhead Explosion
+  Fixed:
+    - Bugs with jumping and other player control bugs (Alpha Warhead)
+    - Some optimizations to increase framerate
+
+Version 1.0.2.1:
+  Fixed:
+    - Few optimization with scenes (count reduced)
+
+Version 1.0.2:
+  Added:
+    - Changelog view
+    - Settings (Quality)
+  Changed:
+    - Alpha Warhead Control Panel model
+    - Camera view in Alpha Warhead
+  Fixed:
+    - Framerate-dependent "looking around" sensetivity. Now when FPS is high, mouse sensetivity won't be low in Alpha Warhead.
+    - Player could contact with Explosion Light in Alpha Warhead
+    - Physics performance optimization
+  Notes: In this update we saved the previous model of Alpha Warhead Control Panel for unknown reason :/ Maybe in future updates we make a choice for Alpha Warhead Panel model
+
+Version 1.0.1:
+  Added:
+    - Information panel for LCZ Decont.
+    - Hide GUI key binding for LCZ Decont.
+    - Show/Hide FPS Key binding for LCZ Decont.
+    - Zoom by mouse wheel for LCZ Decont.
+
+  Fixed:
+    - Late start "10 min announcment" in LCZ Decont.
+    - Few optimizations in Alpha Warhead Detonation
+    - Alpha Warhead Explosion light works properly now
